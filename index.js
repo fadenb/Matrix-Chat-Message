@@ -10,11 +10,11 @@ try {
   const messagetype = core.getInput('messagetype');
 
   // Debug output
-  console.log(`homeserver: ${homeserver}`);
-  console.log(`channel: ${channel}`);
-  console.log(`token: ${token}`);
-  console.log(`message: ${message}`);
-  console.log(`messagetype: ${messagetype}`);
+  core.info(`homeserver: ${homeserver}`);
+  core.info(`channel: ${channel}`);
+  core.info(`token: ${token}`);
+  core.info(`message: ${message}`);
+  core.info(`messagetype: ${messagetype}`);
 
   // Create client object
   const client = sdk.createClient({
