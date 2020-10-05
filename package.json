@@ -1,0 +1,24 @@
+{
+  "name": "matrix-chat-message",
+  "version": "0.0.1",
+  "description": "Send messages to Matrix rooms from a GitHub action",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fadenb/Matrix-Chat-Message.git"
+  },
+  "author": "Tristan Helmich",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/fadenb/Matrix-Chat-Message/issues"
+  },
+  "homepage": "https://github.com/fadenb/Matrix-Chat-Message#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0",
+    "matrix-js-sdk": "^8.4.1"
+  }
+}

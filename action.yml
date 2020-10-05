@@ -1,0 +1,22 @@
+name: 'Matrix Chat Message'
+description: 'Send a message to a Matrix channel'
+inputs:
+  token:
+    description: 'Access token for the account to use'
+    required: true
+  homeserver:
+    description: 'Homeserver of the account to use'
+    required: true
+    default: 'https://matrix.org'
+  channel:
+    description: 'The internal room ID of the channel to send the message to'
+    required: true
+  message:
+    description: 'The message you want to send'
+    required: true
+  messagetype:
+    description: 'Type of Matrix message (e.g. `m.text` or `m.notice`)'
+    default: 'm.notice'
+runs:
+  using: 'node12'
+  main: 'index.js'
