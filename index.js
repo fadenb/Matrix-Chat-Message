@@ -12,6 +12,7 @@ try {
   // Debug output
   core.info(`homeserver: ${homeserver}`);
   core.info(`channel: ${channel}`);
+  console.log(`channel: ${channel}`);
   core.info(`token: ${token}`);
   core.info(`message: ${message}`);
   core.info(`messagetype: ${messagetype}`);
