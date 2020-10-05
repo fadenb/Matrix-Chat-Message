@@ -1,0 +1,12 @@
+name: ESLint
+on: [push, pull_request]
+
+jobs:
+  ESlint:
+    runs-on: ubuntu-latest
+    steps:
+    - name: eslint + fix
+      uses: getsentry/action-eslint-fix@v1
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        dry: false
