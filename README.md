@@ -64,7 +64,7 @@ jobs:
     steps:
     - name: Send message to test channel
       id: matrix-chat-message
-      uses: fadenb/matrix-chat-message@v0.0.1
+      uses: fadenb/matrix-chat-message@v0.0.2
       with:
         homeserver: 'matrix.org'
         token: ${{ secrets.MATRIX_TOKEN }}
