@@ -1,0 +1,13 @@
+name: Node Setup
+on: [push, pull_request]
+
+jobs:
+  eslint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2-beta
+        with:
+          node-version: '12'
+      - run: npm ci
+      - run: ./node_modules/.bin/eslint -c ./.eslintrc.json *.js
