@@ -20,5 +20,10 @@
     "@actions/core": "^1.2.6",
     "@actions/github": "^4.0.0",
     "matrix-js-sdk": "^8.4.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.10.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.1"
   }
 }
