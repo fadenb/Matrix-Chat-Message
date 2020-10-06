@@ -64,12 +64,16 @@ jobs:
     steps:
     - name: Send message to test channel
       id: matrix-chat-message
-      uses: fadenb/matrix-chat-message@v0.0.2
+      uses: fadenb/matrix-chat-message@v0.0.6
       with:
         homeserver: 'matrix.org'
         token: ${{ secrets.MATRIX_TOKEN }}
         channel: '<INSERT YOUR ROOM ID HERE>'
-        message: 'This is an example message. It even supports the use of variables like ${{ github.sha }}'
+        message: |
+          This is an *example message* using **markdown** for formatting.\
+          Use a `\` character at the end of a line to cause a linebreak (the whole message is treated as markdown).\
+          You can use variables like ${{ github.sha }} anywhere.
+
 ```
 
 * Replace matrix.org with the address of your server.
