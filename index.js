@@ -18,7 +18,7 @@ try {
 
   // Create client object
   const client = sdk.createClient({
-    baseUrl: 'https://matrix.org',
+    baseUrl: `https://${homeserver}`,
     accessToken: token,
   });
 
