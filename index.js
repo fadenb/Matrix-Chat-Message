@@ -24,7 +24,7 @@ try {
 
   // Join channel (if we are already in the channel this does nothing)
   client.joinRoom(channel).then(() => {
-    console.log('Joined channel');
+    core.info('Joined channel');
   });
 
   // Send message
@@ -36,7 +36,7 @@ try {
   client.sendEvent(channel, 'm.room.message', content, '').then(() => {
   // message sent successfully
   }).catch((err) => {
-    console.log(err);
+    core.error(err);
   });
 } catch (error) {
   core.setFailed(error.message);
