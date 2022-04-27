@@ -21,7 +21,7 @@
     "@actions/github": "^5.0.1",
     "@vercel/ncc": "^0.33.4",
     "markdown-it": "^12.3.2",
-    "matrix-js-sdk": "^17.0.0"
+    "matrix-js-sdk": "^17.1.0"
   },
   "devDependencies": {
     "eslint": "^8.13.0",
