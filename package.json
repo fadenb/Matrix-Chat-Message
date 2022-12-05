@@ -24,7 +24,7 @@
     "matrix-js-sdk": "^20.1.0"
   },
   "devDependencies": {
-    "eslint": "^8.25.0",
+    "eslint": "^8.29.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0"
   }
