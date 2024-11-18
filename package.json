@@ -19,7 +19,7 @@
   "dependencies": {
     "@actions/core": "^1.11.1",
     "@actions/github": "^6.0.0",
-    "@vercel/ncc": "^0.38.2",
+    "@vercel/ncc": "^0.38.3",
     "markdown-it": "^14.1.0",
     "matrix-js-sdk": "^34.10.0"
   },
