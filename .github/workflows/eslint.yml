@@ -8,6 +8,6 @@ jobs:
       - uses: actions/checkout@v4.2.2
       - uses: actions/setup-node@v4.1.0
         with:
-          node-version: '12'
+          node-version: '22'
       - run: npm ci
       - run: ./node_modules/.bin/eslint -c ./.eslintrc.json -f compact *.js
