@@ -32,7 +32,9 @@
     "inflight": "^2.0.1",
     "rimraf": "^5.0.5",
     "glob": "^10.3.10",
-    "@humanwhocodes/config-array": "npm:@eslint/config-array@latest",
-    "@humanwhocodes/object-schema": "npm:@eslint/object-schema@latest"
+    "eslint": {
+      "@humanwhocodes/config-array": "npm:@eslint/config-array@latest",
+      "@humanwhocodes/object-schema": "npm:@eslint/object-schema@latest"
+    }
   }
 }
